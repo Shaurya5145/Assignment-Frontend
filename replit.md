@@ -1,97 +1,87 @@
-# Overview
+# React Component Library
 
-This is a modern React TypeScript component library featuring reusable UI components with comprehensive functionality, accessibility features, and design system integration. The project combines a full-stack application architecture with a sophisticated component library that includes InputField and DataTable components as the primary showcase elements.
+## Overview
 
-The application serves as both a functional web app and a component documentation platform, featuring interactive Storybook documentation and comprehensive testing coverage. It's built with modern tooling including TypeScript, TailwindCSS, Radix UI primitives, and includes database integration capabilities.
+This is a modern React TypeScript component library featuring comprehensive UI components with a focus on accessibility, design consistency, and developer experience. The project centers around two primary components - InputField and DataTable - built with TypeScript for type safety and styled with TailwindCSS for modern, responsive design. The library integrates with shadcn/ui components and includes Storybook for interactive documentation.
 
-# User Preferences
+## User Preferences
 
 Preferred communication style: Simple, everyday language.
 
-# System Architecture
+## System Architecture
 
-## Frontend Architecture
-- **React 18+** with TypeScript for type safety and modern React features
-- **Vite** as the build tool and development server for fast hot module replacement
-- **TailwindCSS** for utility-first styling with custom design tokens and dark mode support
-- **Radix UI** primitives for accessible, unstyled UI components as the foundation
-- **shadcn/ui** component system integration for consistent design patterns
-- **Wouter** for lightweight client-side routing instead of React Router
+### Frontend Architecture
+- **React 18+** with TypeScript for component development
+- **Vite** as the build tool and development server
+- **Component-first architecture** with reusable, composable UI elements
+- **Dual deployment modes**: Frontend-only (Vercel) and full-stack development
+- **Wouter** for lightweight client-side routing
 
-## Component Library Design
-- **Compound Component Pattern** used in DataTable and InputField for flexible composition
-- **Controlled/Uncontrolled Pattern** support in form components for maximum flexibility
-- **TypeScript Generics** extensively used in DataTable for type-safe data handling
-- **CSS Variables** for theming with light/dark mode support built into the design system
-- **Accessibility-first** approach with proper ARIA attributes and keyboard navigation
+### Design System
+- **TailwindCSS** for utility-first styling with CSS custom properties
+- **shadcn/ui** integration for consistent component patterns
+- **Dark mode support** with theme switching capabilities
+- **Radix UI primitives** for accessible, unstyled component foundations
+- **Class Variance Authority (CVA)** for component variant management
 
-## State Management
-- **TanStack Query** (React Query) for server state management and caching
-- **React Hook Form** for form state management with validation
-- **Local Component State** using useState and useReducer for UI-specific state
-- **Context API** for theme management and shared component state
+### Component Library Structure
+- **InputField Component**: Flexible input with validation states, multiple variants (outlined, filled, ghost), and accessibility features
+- **DataTable Component**: Advanced data table with sorting, selection, and state management
+- **UI Components**: Comprehensive set of shadcn/ui components (buttons, cards, forms, etc.)
+- **Type-safe props** with TypeScript interfaces and proper IntelliSense support
 
-## Testing Strategy
-- **Vitest** as the test runner for fast, modern testing experience
-- **React Testing Library** for component testing with accessibility-focused assertions
-- **Storybook** for interactive component documentation and visual testing
-- **TypeScript** strict mode for compile-time error prevention
+### Development Tools
+- **Storybook** for component documentation and interactive testing
+- **Vitest + React Testing Library** for comprehensive testing coverage
+- **ESLint/Prettier** for code quality and formatting
+- **PostCSS + Autoprefixer** for CSS processing
 
-## Build and Development Tools
-- **ESBuild** for fast production builds and server bundling
-- **PostCSS** with Autoprefixer for CSS processing
-- **Path Aliases** configured for clean imports (@/, @shared/, @assets/)
-- **Hot Module Replacement** in development for rapid iteration
+### State Management
+- **React hooks** for local component state
+- **TanStack Query** for server state management and caching
+- **Custom hooks** for reusable stateful logic
 
-## Backend Architecture
-- **Express.js** server with TypeScript for API endpoints
-- **Middleware Pattern** for request/response processing and error handling
-- **Server-side Rendering** setup with Vite integration for development
-- **Memory Storage** interface with potential for database integration
+### Backend Architecture (Optional)
+- **Express.js** server with TypeScript
+- **Drizzle ORM** for database operations with PostgreSQL support
+- **Zod schemas** for data validation
+- **RESTful API** structure with `/api` prefix
+- **Session management** with connect-pg-simple
 
-## Database Integration
-- **Drizzle ORM** configured for type-safe database operations
-- **PostgreSQL** dialect configured (ready for Neon Database integration)
-- **Schema-first** approach with Zod validation integration
-- **Migration Support** with drizzle-kit for database schema management
+### Configuration Management
+- **Multiple Vite configs** for different deployment scenarios
+- **Path aliases** for clean imports (@, @shared, @assets)
+- **Environment-based configuration** for development and production
 
-## Design System
-- **CSS Custom Properties** for consistent theming across components
-- **Responsive Design** with mobile-first approach
-- **Design Tokens** for colors, typography, spacing, and shadows
-- **Component Variants** using class-variance-authority for systematic styling
+## External Dependencies
 
-# External Dependencies
+### Core Framework Dependencies
+- **React 18+** - Component library foundation
+- **TypeScript** - Type safety and developer experience
+- **Vite** - Build tool and development server
 
-## UI and Styling
-- **@radix-ui/react-\*** - Comprehensive set of accessible, unstyled UI primitives
-- **class-variance-authority** - Utility for creating component variants with consistent styling
-- **tailwindcss** - Utility-first CSS framework for rapid UI development
-- **clsx** and **tailwind-merge** - Utilities for conditional and merged class names
+### UI and Styling
+- **TailwindCSS** - Utility-first CSS framework
+- **Radix UI** - Comprehensive suite of accessible component primitives
+- **Lucide React** - Icon library for consistent iconography
+- **class-variance-authority** - Component variant management
+- **clsx + tailwind-merge** - Conditional CSS class handling
 
-## State Management and Data Fetching
-- **@tanstack/react-query** - Powerful data synchronization for server state
-- **@hookform/resolvers** - Validation resolvers for React Hook Form
-- **react-hook-form** - Performant forms with easy validation
+### Development and Testing
+- **Storybook** - Component documentation and testing
+- **Vitest** - Unit testing framework
+- **React Testing Library** - Component testing utilities
 
-## Development and Testing
-- **@storybook/\*** - Interactive component documentation and development environment
-- **vitest** - Fast unit test framework optimized for Vite
-- **@testing-library/react** - Testing utilities focused on accessibility and user behavior
+### Data Management
+- **TanStack React Query** - Server state management
+- **React Hook Form** - Form state management
+- **Zod** - Schema validation
 
-## Database and Backend
-- **drizzle-orm** - Type-safe and performant TypeScript ORM
-- **@neondatabase/serverless** - Serverless PostgreSQL database driver
-- **drizzle-zod** - Integration between Drizzle and Zod for schema validation
+### Database and Backend (Optional)
+- **Drizzle ORM** - Type-safe database operations
+- **@neondatabase/serverless** - PostgreSQL database connectivity
+- **Express.js** - Backend server framework
 
-## Build Tools and Utilities
-- **vite** - Next generation frontend build tool
-- **esbuild** - Extremely fast JavaScript bundler
-- **tsx** - TypeScript execution environment for Node.js
-- **date-fns** - Modern JavaScript date utility library
-
-## Component Specific
-- **cmdk** - Command palette and search interface component
-- **embla-carousel-react** - Lightweight carousel library
-- **lucide-react** - Beautiful and consistent icon set
-- **vaul** - Drawer component library for mobile-first interfaces
+### Deployment
+- **Vercel** - Primary deployment platform for frontend-only mode
+- **PostgreSQL** - Database for full-stack deployment scenarios
