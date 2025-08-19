@@ -1,6 +1,11 @@
-# React Component Library
+# React TypeScript Component Library
 
-A modern React TypeScript component library featuring InputField and DataTable components with comprehensive functionality, accessibility features, and design system integration.
+A modern, production-ready React TypeScript component library featuring InputField and DataTable components with comprehensive functionality, accessibility features, and design system integration.
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![TypeScript](https://img.shields.io/badge/%3C%2F%3E-TypeScript-%230074c1.svg)](http://www.typescriptlang.org/)
+[![React](https://img.shields.io/badge/React-18+-blue.svg)](https://reactjs.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
 
 ## 🎯 Overview
 
@@ -72,3 +77,65 @@ npm run build
 ```
 
 The frontend build creates static files in the `dist` directory ready for deployment to any static hosting service.
+
+## 📋 Component Documentation
+
+### InputField Component
+
+A flexible input component with comprehensive features:
+
+- **Variants**: Default, filled, outline styles
+- **Sizes**: Small, medium, large
+- **States**: Error, success, disabled
+- **Features**: Clear button, password toggle, custom icons
+- **Accessibility**: ARIA labels, keyboard navigation
+- **TypeScript**: Full type safety with proper interfaces
+
+### DataTable Component
+
+A powerful data table with advanced functionality:
+
+- **Sorting**: Column-based ascending/descending sort
+- **Selection**: Single and multi-row selection
+- **States**: Loading, empty, error states
+- **Responsive**: Mobile-friendly design
+- **Accessibility**: Screen reader support, keyboard navigation
+- **TypeScript**: Generic types for type-safe data handling
+
+## 🧪 Testing
+
+Run the test suite:
+
+```bash
+npm test
+```
+
+Test coverage includes:
+- Component rendering and behavior
+- User interactions (clicks, typing, keyboard navigation)
+- Accessibility features
+- Edge cases and error states
+
+## 🎨 Storybook (Optional)
+
+Interactive component documentation is configured but not required:
+
+```bash
+npm run storybook
+```
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## 📞 Support
+
+If you have any questions or need support, please open an issue on GitHub.
