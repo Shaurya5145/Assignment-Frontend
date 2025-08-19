@@ -202,7 +202,7 @@ export default function ComponentShowcase() {
                 {theme === 'light' ? <Moon className="h-5 w-5" /> : <Sun className="h-5 w-5" />}
               </button>
               <a
-                href="https://github.com"
+                href="https://github.com/Shaurya5145/Assignment-Frontend"
                 className="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200"
                 data-testid="link-github"
                 aria-label="View on GitHub"
@@ -655,7 +655,7 @@ interface Column<T> {
           <div className="text-center text-gray-500 dark:text-gray-400">
             <p className="text-sm">
               Built with React, TypeScript, and TailwindCSS • 
-              <a href="#" className="text-primary hover:text-primary/80 ml-1">View on GitHub</a> • 
+              <a href="https://github.com/Shaurya5145/Assignment-Frontend" className="text-primary hover:text-primary/80 ml-1">View on GitHub</a> • 
               <a href="#" className="text-primary hover:text-primary/80 ml-1">Storybook</a>
             </p>
           </div>
