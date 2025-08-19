@@ -262,8 +262,14 @@ export default function ComponentShowcase() {
   errorMessage?: string;
   disabled?: boolean;
   invalid?: boolean;
+  loading?: boolean;
   variant?: 'filled' | 'outlined' | 'ghost';
   size?: 'sm' | 'md' | 'lg';
+  type?: 'text' | 'email' | 'password' | 'search' | 'tel';
+  showClearButton?: boolean;
+  showPasswordToggle?: boolean;
+  className?: string;
+  id?: string;
 }`}
                   </pre>
                 </div>
@@ -443,6 +449,12 @@ export default function ComponentShowcase() {
   loading?: boolean;
   selectable?: boolean;
   onRowSelect?: (selectedRows: T[]) => void;
+  selectedRows?: T[];
+  onSort?: (dataIndex: string, direction: 'asc' | 'desc') => void;
+  sortBy?: string;
+  sortDirection?: 'asc' | 'desc';
+  emptyMessage?: string;
+  className?: string;
 }
 
 interface Column<T> {
@@ -450,6 +462,8 @@ interface Column<T> {
   title: string;
   dataIndex: keyof T;
   sortable?: boolean;
+  render?: (value: any, record: T, index: number) => React.ReactNode;
+  width?: string | number;
 }`}
                   </pre>
                 </div>
