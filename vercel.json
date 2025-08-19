@@ -1,7 +1,7 @@
 {
-  "buildCommand": "npx vite build --config vite.config.frontend.ts",
+  "buildCommand": "npm run build:frontend",
   "outputDirectory": "dist",
-  "devCommand": "npx vite --config vite.config.frontend.ts",
+  "devCommand": "npm run dev:frontend",
   "installCommand": "npm install",
   "framework": "vite",
   "rewrites": [
