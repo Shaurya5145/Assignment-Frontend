@@ -656,7 +656,7 @@ interface Column<T> {
             <p className="text-sm">
               Built with React, TypeScript, and TailwindCSS • 
               <a href="https://github.com/Shaurya5145/Assignment-Frontend" className="text-primary hover:text-primary/80 ml-1">View on GitHub</a> • 
-              <a href="#" className="text-primary hover:text-primary/80 ml-1">Storybook</a>
+              <a href="https://storybook-static-wine.vercel.app/" className="text-primary hover:text-primary/80 ml-1" target="_blank" rel="noreferrer noopener">Storybook</a>
             </p>
           </div>
         </footer>
